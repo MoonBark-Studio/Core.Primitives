@@ -1,6 +1,6 @@
 using System;
 
-namespace GridPlacement.Core.Types;
+namespace MoonBark.Core.Types;
 
 /// <summary>
 /// Enhanced color type with additional utilities for MoonBark ecosystem.

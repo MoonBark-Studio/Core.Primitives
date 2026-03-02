@@ -1,6 +1,6 @@
 using System;
 
-namespace GridPlacement.Core.Types;
+namespace MoonBark.Core.Types;
 
 /// <summary>
 /// Enhanced 2D vector type with extended functionality for MoonBark ecosystem.
