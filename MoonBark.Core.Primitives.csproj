@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>MoonBark.Core.Primitives</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>MoonBark Studio</Authors>
+    <Description>Reusable primitive types for the MoonBark ecosystem</Description>
+    <PackageTags>godot;unity;primitives;vector;color</PackageTags>
+    <RepositoryUrl>https://github.com/MoonBark-Studio/MoonBark.Core.Primitives</RepositoryUrl>
+  </PropertyGroup>
+
+</Project>
