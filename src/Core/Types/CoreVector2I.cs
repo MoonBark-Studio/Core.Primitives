@@ -9,6 +9,7 @@ namespace MoonBark.Core.Types;
 public readonly struct CoreVector2I : IEquatable<CoreVector2I>
 {
     public readonly int X;
+    
     public readonly int Y;
 
     public CoreVector2I(int x, int y)

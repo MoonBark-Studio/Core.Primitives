@@ -12,6 +12,8 @@
     <Description>Reusable primitive types for the MoonBark ecosystem</Description>
     <PackageTags>godot;unity;primitives;vector;color;transform;rectangle</PackageTags>
     <RepositoryUrl>https://github.com/MoonBark-Studio/MoonBark.Core.Primitives</RepositoryUrl>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
   </PropertyGroup>
 
   <!-- Test project configuration -->

@@ -9,7 +9,10 @@ using System;
 public readonly struct CoreTransform : IEquatable<CoreTransform>
 {
     public readonly CoreVector3 Position;
-    public readonly CoreVector3 Rotation; // Euler angles in degrees
+    /// <summary>
+    /// Rotation in Euler angles (degrees).
+    /// </summary>
+    public readonly CoreVector3 Rotation;
     public readonly CoreVector3 Scale;
 
     public static readonly CoreTransform Identity = new(CoreVector3.Zero, CoreVector3.Zero, CoreVector3.One);
