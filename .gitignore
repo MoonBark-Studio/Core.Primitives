@@ -4,3 +4,31 @@ obj/
 *.suo
 *.cache
 *.lock.json
+# Unified Temporary Directories
+# All temporary files and build outputs should go here for easy cleanup
+tmp/
+.tmp/
+temp/
+.temp/
+artifacts/
+logs/
+
+# Coverage reports
+coverage/
+coverage-report/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.log
+*.err
+
+# Build output files
+build_*.txt
+*_build.txt
+*_error.txt
+*_output.txt
+benchmark_*.txt
+full_output.txt
+temp_*.txt
