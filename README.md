@@ -1,12 +1,39 @@
 # MoonBark.Core.Primitives
 
-Reusable primitive types for the MoonBark ecosystem, providing engine-agnostic implementations for consistent cross-platform development.
+**⚠️ DEPRECATED - This library is no longer maintained.**
 
-## Overview
+## Deprecation Notice
 
-This library provides core primitive types used across MoonBark plugins and projects. It offers engine-agnostic implementations of common game development types, enabling consistent APIs across Godot, Unity, and other platforms.
+This library has been deprecated as of March 2026. The types provided by this library should be implemented locally in the plugins that need them, rather than as a shared dependency.
 
-## Features
+### Migration Guide
+
+If you're using MoonBark.Core.Primitives in your project, follow these steps:
+
+#### For GridPlacement
+- Core types have been moved to `GridPlacement.Core.Types` namespace
+- Update your usings from `using MoonBark.Core.Types;` to `using GridPlacement.Core.Types;`
+- No API changes - types remain the same
+
+#### For Other Plugins
+- Implement Core types locally in your plugin's Core layer
+- Or use engine-native types if you don't need engine-agnostic abstractions
+- See GridPlacement.Core/Types for reference implementations
+
+### Rationale for Deprecation
+
+1. **Single Consumer**: Only GridPlacement actively uses these types
+2. **Dead Dependencies**: TaskDistribution and StateMachine reference it but don't use it
+3. **False Abstraction**: No actual cross-engine usage exists in the ecosystem
+4. **Simpler Architecture**: Local ownership is clearer than shared dependencies
+
+---
+
+## Overview (Historical)
+
+This library provided core primitive types used across MoonBark plugins and projects. It offered engine-agnostic implementations of common game development types, enabling consistent APIs across Godot, Unity, and other platforms.
+
+## Features (Historical)
 
 - **Engine-Agnostic**: Pure C# implementations without engine dependencies
 - **Cross-Platform**: Consistent APIs across Godot, Unity, and other platforms
