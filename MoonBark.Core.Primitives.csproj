@@ -23,6 +23,7 @@
 
   <ItemGroup>
     <PackageReference Include="Friflo.Engine.ECS" Version="3.4.2" />
+    <PackageReference Include="System.IO.Hashing" Version="10.0.5" />
   </ItemGroup>
 
   <!-- Conditional engine references -->
