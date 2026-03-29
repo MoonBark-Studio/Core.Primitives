@@ -1,4 +1,4 @@
-﻿namespace MoonBark.Core.ECS;
+namespace MoonBark.Core.ECS;
 
 using Friflo.Engine.ECS;
 
