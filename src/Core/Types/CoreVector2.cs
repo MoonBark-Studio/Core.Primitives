@@ -61,5 +61,24 @@ public readonly struct CoreVector2 : IEquatable<CoreVector2>
 
     public float Dot(CoreVector2 other) => X * other.X + Y * other.Y;
 
+    public CoreVector2 GetDirectionTo(CoreVector2 target)
+    {
+        float dx = target.X - X;
+        float dy = target.Y - Y;
+        float len = MathF.Sqrt(dx * dx + dy * dy);
+        return len > 1e-6f ? new CoreVector2(dx / len, dy / len) : Zero;
+    }
+
+    public CoreVector2 MoveInDirection(CoreVector2 direction)
+        => new(X + direction.X, Y + direction.Y);
+
+    public CoreVector2 MoveInDirection(CoreVector2 direction, float steps)
+        => new(X + direction.X * steps, Y + direction.Y * steps);
+
+    public CoreVector2 Clamp(CoreVector2 min, CoreVector2 max)
+        => new(
+            Math.Max(min.X, Math.Min(max.X, X)),
+            Math.Max(min.Y, Math.Min(max.Y, Y)));
+
     public override string ToString() => $"CoreVector2({X:F3}, {Y:F3})";
 }

@@ -25,6 +25,12 @@
     <PackageReference Include="System.IO.Hashing" Version="10.0.5" />
   </ItemGroup>
 
+  <!-- Exclude test files from main library -->
+  <ItemGroup>
+    <Compile Remove="src/Tests/**/*.cs" />
+    <EmbeddedResource Remove="src/Tests/**/*.cs" />
+  </ItemGroup>
+
   <!-- Conditional engine references -->
   <ItemGroup Condition="'$(IncludeGodot)'=='true'">
     <PackageReference Include="Godot.SourceGenerators" Version="4.3.0" />
